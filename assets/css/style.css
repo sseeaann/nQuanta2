@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100|Lora:700);
+body {
+  font-family: "Roboto", sans-serif; }
+
+.flex-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center; }
+
+header {
+  height: 800px;
+  background-image: url(../img/work-guy.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative; }
+  header #z-logo {
+    height: 60px;
+    margin: 20px 0;
+    position: absolute; }
+  header .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center; }
+    header .container .content {
+      text-align: center; }
+      header .container .content p {
+        font-size: 48px;
+        font-weight: 100;
+        color: gainsboro;
+        margin-bottom: 40px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
+        header .container .content p:nth-of-type(1) {
+          text-align: right; }
+        header .container .content p:nth-of-type(2) {
+          text-align: left; }
+        header .container .content p span {
+          font-weight: 400;
+          font-style: italic;
+          color: white;
+          display: inline-block; }
+      header .container .content a {
+        color: white;
+        font-size: 24px;
+        border: 3px double white;
+        padding: 10px 50px;
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5); }
+        header .container .content a:hover {
+          background: rgba(0, 0, 0, 0.25); }
+
+@media (max-width: 600px) {
+  header .container .content p {
+    font-size: 36px; }
+    header .container .content p:nth-of-type(1), header .container .content p:nth-of-type(2) {
+      text-align: center; }
+  header .container .content a {
+    padding: 10px 30px; } }
+section#process {
+  text-align: center;
+  padding: 50px 0 100px;
+  overflow: hidden; }
+  section#process .container h2 {
+    margin: 30px auto; }
+  section#process .container .thumbnail {
+    padding: 30px 0 10px;
+    background: #e7e7e7;
+    box-shadow: 0px 5px 10px -5px black; }
+
+section#upload {
+  height: 600px;
+  background: #e7e7e7; }
+  section#upload #dropzone {
+    background: white;
+    height: 400px;
+    border: 5px groove #04519b;
+    border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column; }
+    section#upload #dropzone:hover {
+      cursor: pointer; }
+
+footer .navbar {
+  border-radius: 0;
+  margin: 0; }
+  footer .navbar li {
+    color: white; }
